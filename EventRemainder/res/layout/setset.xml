@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<ScrollView
+    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="458dp" >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/seekBar1"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="23dp"
+            android:text="@string/alarminsilentmode"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/ringbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Pick"/>
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timePicker2"
+            android:layout_below="@+id/ringbutton1"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBar1"
+            android:layout_alignLeft="@+id/switch1"
+            android:text="@string/volume"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ringbutton1"
+            android:layout_alignBottom="@+id/ringbutton1"
+            android:layout_alignLeft="@+id/textView4"
+            android:text="@string/ringtone"
+            android:textSize="15sp" />
+
+<Button
+    android:id="@+id/save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp"
+    android:text="@string/save" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/switch1"
+    android:layout_marginTop="39dp"
+    android:text="@string/alarmtime"
+    android:textSize="15sp" />
+
+<TimePicker
+    android:id="@+id/timePicker2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/switch1"
+    android:layout_below="@+id/textView1"
+    android:layout_marginTop="23dp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>
